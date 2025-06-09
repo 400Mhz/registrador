@@ -76,7 +76,7 @@ void registrarEntrada(Fila *f) {
     
     char data_hora_str[50];
     strftime(data_hora_str, sizeof(data_hora_str), "%d/%m/%Y %H:%M:%S", localtime(&p.data_hora));
-    fprintf(arquivo, "ENTRADA - CÛdigo: %d | Nome: %s | Quantidade: %d | Data/Hora: %s\n", 
+    fprintf(arquivo, "ENTRADA - C√≥digo: %d | Nome: %s | Quantidade: %d | Data/Hora: %s\n", 
             p.codigo, p.nome, p.quantidade, data_hora_str);
     fclose(arquivo);
     printf("Entrada registrada com sucesso!\n");
@@ -84,7 +84,7 @@ void registrarEntrada(Fila *f) {
 
 void registrarSaida(Fila *f) {
     if (filaVazia(f)) {
-        printf("Nao ha produtos disponÌveis para saida!\n");
+        printf("Nao tem produtos dispon√≠veis para saida!\n");
         return;
     }
     
@@ -98,7 +98,7 @@ void registrarSaida(Fila *f) {
     
     char data_hora_str[50];
     strftime(data_hora_str, sizeof(data_hora_str), "%d/%m/%Y %H:%M:%S", localtime(&p.data_hora));
-     fprintf(arquivo, "SAÕDA - CÛdigo: %d | Nome: %s | Quantidade: %d | Data/Hora: %s\n", 
+     fprintf(arquivo, "SA√çDA - C√≥digo: %d | Nome: %s | Quantidade: %d | Data/Hora: %s\n", 
             p.codigo, p.nome, p.quantidade, data_hora_str);
     fclose(arquivo);
     
